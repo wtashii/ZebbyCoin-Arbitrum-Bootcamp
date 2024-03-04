@@ -31,7 +31,7 @@ export default function Home() {
       await tx.wait();
       setSubmitted(true);
       setTransactionHash(tx.hash);
-      setMintingAmount('');
+      setMintingAmount(undefined);
     } catch (e: any) {
       let errorMessage = "Failed to Mint ZebbyCoin";
       if (e.data) {
@@ -62,7 +62,7 @@ export default function Home() {
       await tx.wait();
       setSubmitted(true);
       setTransactionHash(tx.hash);
-      setStakingAmount(''); 
+      setStakingAmount(undefined); 
     } catch (e: any) {
       let errorMessage = "Failed to Stake ZebbyCoin";
       if (e.data) {
